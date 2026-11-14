@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: #FFFFFF;
+    color: #101E3B;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(7, 85, 232, 0.1);
+  }
+
+  .glass-card-dark {
+    background: rgba(7, 26, 59, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(22, 217, 242, 0.15);
+  }
+
+  .glass-nav {
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(7, 85, 232, 0.08);
+  }
+
+  .glass-nav-transparent {
+    background: rgba(7, 26, 59, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .brand-text-gradient {
+    background: linear-gradient(135deg, #071A3B 0%, #0755E8 60%, #008BFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .brand-text-gradient-cyan {
+    background: linear-gradient(135deg, #008BFF 0%, #16D9F2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .subtle-grid {
+    background-size: 32px 32px;
+    background-image: 
+      linear-gradient(to right, rgba(7, 85, 232, 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(7, 85, 232, 0.04) 1px, transparent 1px);
+  }
+
+  .subtle-dots {
+    background-image: radial-gradient(rgba(7, 85, 232, 0.08) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+}
